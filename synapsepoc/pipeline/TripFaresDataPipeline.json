@@ -465,7 +465,7 @@
 			},
 			"SynapseWorkspaceName": {
 				"type": "string",
-				"defaultValue": "avi5dco6ltzbbt6gpocws1.database.windows.net"
+				"defaultValue": "avi5dco6ltzbbt6gpocws1"
 			},
 			"SQLDedicatedPoolName": {
 				"type": "string",
