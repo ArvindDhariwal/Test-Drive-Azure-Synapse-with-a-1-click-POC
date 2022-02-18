@@ -1,0 +1,11 @@
+{
+	"name": "customer_demo_kv_ir",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://customer-demo-kv.vault.azure.net/"
+		}
+	}
+}

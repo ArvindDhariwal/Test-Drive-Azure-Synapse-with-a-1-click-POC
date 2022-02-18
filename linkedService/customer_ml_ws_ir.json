@@ -1,0 +1,27 @@
+{
+	"name": "customer_ml_ws_ir",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureMLService",
+		"typeProperties": {
+			"subscriptionId": "6cca3516-d02e-494a-a828-cc05b0811f29",
+			"resourceGroupName": "customer_demo_rg",
+			"mlWorkspaceName": "customer-ml-ws",
+			"servicePrincipalId": "42b40242-48f7-49d3-a8ab-8a78afb644bf",
+			"servicePrincipalKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "customer_demo_kv_ir",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "42b40242-48f7-49d3-a8ab-8a78afb644bf"
+			},
+			"tenant": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

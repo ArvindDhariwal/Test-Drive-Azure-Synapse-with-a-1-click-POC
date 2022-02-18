@@ -1,0 +1,17 @@
+{
+	"name": "ProvideAccessToPurview",
+	"properties": {
+		"content": {
+			"query": "--dedicated pool\nCREATE USER [customer-demo-purview-acct] FROM EXTERNAL PROVIDER\nGO\nEXEC sp_addrolemember 'db_owner', [customer-demo-purview-acct]\nGO\n---serverless\nCREATE LOGIN [customer-demo-purview-acct] FROM EXTERNAL PROVIDER;\nALTER SERVER ROLE sysadmin ADD MEMBER [customer-demo-purview-acct];",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "default",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
